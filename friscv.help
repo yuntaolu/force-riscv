@@ -1,0 +1,26 @@
+USAGE: force [options]
+
+Options:
+  --cfg, -c             Configuration file path.
+  --help                Print usage and exit.
+  --log, -l             Specify logging level.
+  --dump, -d            Specify dumping option.
+  --noasm,              Indicate not to output assembly code.
+  --img,                Indicate to output memory and registers image.
+  --options, -o         Specify test options.
+  --seed, -s            Specify seed for test generation.
+  --test, -t            Specify test template name to run.
+  --noiss, -n           Indicate to not simulate during test generation.
+  --max-instr, -m       Maximum number of instruction that can be simulated.
+  --num-chips, -P       Number of chips.
+  --num-cores, -C       Number of cores per chip.
+  --num-threads, -T     Number of threads per core.
+  --outputwithseed, -w  Indicate to generate outputs with seed number.
+  --failOverride, -f    FORCE will fail when operand override is invalid.
+  --global-modifier, -g Global modification file path.
+
+Examples:
+  force -s 0x123 -t utils/smoke/test_force.py
+  force -s 0x123 -l info -t utils/smoke/test_force.py
+  force --unknown -- --this_is_no_option
+
