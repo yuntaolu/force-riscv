@@ -4,7 +4,7 @@ Build and test guide for FORCE-RISCV, referring to [README.md](./README.md)
 ## Setup
 * Request access to private repository.
 * Clone the FORCE-RISCV repository:
-  * ` git clone git@github.com:yuntaolu/ForceRiscv.git`
+  * ` git clone git@github.com:yuntaolu/force-riscv.git`
   * ` cd [base_directory]/force-riscv/`
 
 * Set the build  environment 
